@@ -1,0 +1,59 @@
+.chart-header {
+    display: grid;
+    grid-template-columns: auto 4fr;
+    width: 100%;
+    padding: 5px;
+}
+
+.filter-button {
+    display: flex;
+    align-items: center;
+}
+
+.legend {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    margin-left: 20px;
+}
+
+.legends {
+    display: flex;
+    flex-direction: column;
+}
+
+.legend-title {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.legend-circle {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.button, .grouped-button{
+    width: 150px;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 8%;
+    background-color: #13496a;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.button:hover {
+    background-color: #17618f;
+    /* Lighten color on hover */
+}

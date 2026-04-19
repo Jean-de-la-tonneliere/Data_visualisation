@@ -1,0 +1,178 @@
+@import url(barchart.css);
+@import url(groupedbarchart.css);
+@import url(linechart.css);
+
+body {
+    font-family: sans-serif;
+    font-size: 13px;
+    justify-items: center; 
+    text-align: center;
+}
+
+a:link {
+    color: green;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+
+/* GRID : */
+.content {  
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.4fr 0.7fr 0.2fr 0.2fr 1fr 0.2fr 0.7fr ;
+    gap: 20px 10px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "Text_Area Text_Area Text_Area"
+      "LineChart Map Map"
+      "Text_Area1 Text_Area1 Text_Area1"
+      "Text_Area2 Text_Area2 Text_Area2"
+      "GroupedBarChart GroupedBarChart GroupedBarChart"
+      "Text_Area3 Text_Area3 Text_Area3"
+      "BarChartDisease BarChartNoDisease LegendBarChart";
+    justify-content: center; 
+    align-content: center; 
+    justify-items: center; 
+    align-items: stretch; 
+    width: 90%;
+  }
+  
+.Text_Area {grid-area: Text_Area; width: 80%;}
+.Text_Area1 {grid-area: Text_Area1; width: 80%;}
+.Text_Area2 {grid-area: Text_Area2; width: 80%;}
+.Text_Area3 {grid-area: Text_Area3; width: 80%;}
+
+/* First charts row :*/
+.LineChart, .Map{
+    width: 100%;
+    display: flex; 
+    display: grid; 
+    grid-template-rows: 1.9fr 0.1fr; 
+}
+.LineChart { 
+    grid-area: LineChart;     
+    grid-template-areas: 
+        "linechart"
+        "linechartTitle";
+}
+.linechart { grid-area: linechart; }
+.linechartTitle { grid-area: linechartTitle; }
+  
+.Map { 
+    grid-area: Map;     
+    grid-template-areas: 
+        "map-container"
+        "map-container-Title"; 
+}
+.map-container{ grid-area: map-container;}
+.map-container-Title{ grid-area: map-container-Title;}
+
+/* Second chart row : */
+.GroupedBarChart { 
+    grid-area: GroupedBarChart; 
+    display: grid; 
+    grid-template-columns: 2fr 1fr; 
+    grid-template-areas: 
+        "visuBarcharts chart-header"; 
+    width: 100%;
+}
+.visuBarcharts { grid-area: visuBarcharts; width: 100%; }
+.chart-header { 
+    grid-area: chart-header; 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center; 
+}
+.filter-button{
+    padding-bottom: 50px;
+}
+  
+
+/* Third and last chart row : */
+.BarChartDisease { grid-area: BarChartDisease; }
+.BarChartNoDisease { grid-area: BarChartNoDisease; }
+.LegendBarChart { grid-area: LegendBarChart; }
+  
+  
+/* FOOTER : */
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    gap: 18px;
+  }
+  
+
+
+
+/* 
+svg.visu text.title {
+    font-size: 16px;
+}
+
+
+body {
+    font-family: sans-serif;
+    font-size: 12px;
+    margin: 0; 
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    background-color: aliceblue;
+}
+
+h1 {
+    text-align: center;
+}
+
+p {
+    background: #f2f5d5;
+    width: 500px;
+    height: 150px;
+    padding: 20px;
+    border: 5px solid gray;
+    margin: 20px;
+}
+
+
+
+.linechart-visu,
+.map-visu,
+.bars-container,
+.bar-visu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; 
+    margin: 20px 0;
+}
+
+
+#linechart,
+#map-container,
+#gpbarchart,
+#barchartDisease,
+#barchartNoDisease {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    //max-width: 1000px;
+}
+
+#map-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    max-width: 1000px;
+    border: 3px solid black; 
+    padding: 10px; 
+    background-color: white; 
+}
+
+ */

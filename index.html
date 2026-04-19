@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>F20DV Group Edinburgh 1</title>
+
+    <!-- loading D3.js library -->
+    <script src="libs/d3/d3.v7.min.js"></script>
+
+    <!-- loading styles -->
+    <link rel="stylesheet" href="/styles/main.css">
+</head>
+
+<body>
+
+    <div class="content">
+        <div class="Text_Area">
+            <h1><b> - Alzheimer - </b></h1>
+            <h2><b>What could be the predisposition to this illness of the mind ?</b></h2>
+            <h3><i>A school project by F20DV Group 1 students </i></h3>
+            <p>
+                Alzheimer is a terrible disease that affect the mind, gnawing bit by bit the memories of people
+                afflicted by it.
+                This affliction is found in people from every corner of the world, concerning everyone.
+                It is one of the main challenge of this century for the medical field, as to this day, there isn't any
+                treatment that could completely cure it.
+            </p>
+            <p>
+                The data that we use today come from Kaggle - a website that allows publication of copyright-free
+                datasets.
+            </p>
+            <a href="https://www.kaggle.com/datasets/ankushpanday1/alzheimers-prediction-dataset-global/data">
+                <i> &#8594 Click to see the DataBase &#8592 </i></a>
+            <p>This data contains 74,283 entries from 20 countries around the world, 25 attributes, and is the
+                combinaison of two Health Reports.</p>
+            <p>You may now wonder how we sorted and use this complex data. To know more, follow us on this journey.</p>
+            <p>
+                As today will only be a brief introduction to this matter, we carefully selected a few attributes which
+                seemed to carry the most relevance and impactfulness.
+                We were left with 3 distinct cathegories, along with the one for the index.
+            </p>
+            <p>On this note, let's begin !</p>
+        </div>
+
+        
+        <!-- Line chart Visualisation -->
+        <div class="LineChart">
+            <div id="linechart"></div>
+            <div id="linechartTitle">
+                <h3>Percentage of people with Alzheimer per age</h3>
+            </div>
+        </div>
+
+
+        <!-- Choropleth Map Visualisation -->
+        <div class="Map">
+            <div id="map-container"></div>
+            <div id="map-container-Title">
+                <h3>Percentage of people with Alzheimer per country</h3>
+            </div>
+            <div class="world-button"></div>
+        </div>
+
+        <div class="Text_Area1">
+            <p>
+                As you may see above, the very first chart display the percentage of people affected by Alzheimer by age
+                and gender - while the second is by country.
+                Those three elements are our index. If you wish, you can sort all the following charts with those.
+                Click on one of the two line of the first chart to pick a gender. Click again to deselect.
+                To choose an age interval, brush the X-Axis of the first chart. You can then edit your selection.
+                For the country, simply click on one.
+            </p>
+            <p>
+                As you may sadly notice, those percentage seems to be quite high -
+                and the age, that seems to be one of it's main causes, it's not something that can be stoped
+            </p>
+        </div>
+
+
+
+        <!-- Grouped Stacked Bar chart Visualisation -->
+        <div class="Text_Area2">
+            <p>
+                This following barchart is focused on two categoris that are bit further away from our topic of disease,
+                as, this time, it does not follow the topic of alments of the body
+                <br>Indeed - here, we will focuse on social and external factors.</br>
+                You may click on the button to switch between the two.
+            </p>
+        </div>
+        <div class="GroupedBarChart">
+            <div class="visuBarcharts" id="gpbarchart"></div>
+            <div class="chart-header">
+                <div class="filter-button"></div>
+                <div class="legend"></div>
+            </div>
+        </div>
+
+
+        <!-- Bar Chart with symbols​ Visualisation -->
+        <div class="Text_Area3">
+            <p>
+                Last but not least, we will see the comorbidity diseases.
+                <br><i>comorbidity = a disease or medical condition that is simultaneously present with another or
+                    others in a patient </i></br>
+                We have a selection of 6 of those, where you can switch between them through the menu on the right.<br>
+                <br>
+                <br>
+                Through all this data, which can be depressing, we have decided to show you the positive side. <br>
+                As you can see, the impact of comorbidities on Alzheimer's disease is not alarming. <br>
+                The data speaks for itself ! <br>
+                So whether you have diabetes or not, it will not affect your risk of developing Alzheimer's disease.
+            </p>
+            <br>
+            <h3>Impact of commorbidity factors on Alzheimer's diagnosis</h3>
+        </div>
+
+        <div class="BarChartDisease">
+            <div id="barchartDisease"></div>
+        </div>
+        <div class="BarChartNoDisease">
+            <div id="barchartNoDisease"></div>
+        </div>
+        <div class="LegendBarChart">
+            <div class="comorbidities-buttons"></div>
+        </div>
+    </div>
+
+</body>
+
+<hr>
+<footer>
+    <h3>HERIOT WATT</h3>
+    <h3>F20DV - Edinburgh Campus - Group 1</h3>
+    <ul>
+        <li>Laura LAKOMICKI</li>
+        <li>Emma LAFFONT </li>
+        <li>Jeanne PORCHER</li>
+        <li>Inès LEHOURS</li>
+    </ul>
+</footer>
+
+<script type="module" src="scripts/main.js"></script>
+
+</html>

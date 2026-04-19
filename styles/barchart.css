@@ -1,0 +1,47 @@
+svg.barchart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+svg.barchart path.bar {
+    fill: black;
+    stroke: black;
+    stroke-width: 2px;
+}
+
+svg.barchart text.commorbidities-label {
+    font-family: sans-serif;
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+    height: 100%; 
+}
+
+
+.bar-visu {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.bars-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.comorbidities-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+    height: 100%; 
+}
+
+

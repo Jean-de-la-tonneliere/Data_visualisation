@@ -1,0 +1,19 @@
+svg path.line{
+    fill: none;
+    stroke-width: 3;
+}
+svg path.line.Ignored{
+    stroke-width: 2;
+    stroke : rgb(174, 174, 174)
+}
+
+svg path.line.highlighted{
+    stroke-width: 5;
+}
+
+svg path.line.highlighted.F{
+    stroke : rgb(0, 174, 128)"
+}
+svg path.line.highlighted.M{
+    stroke :rgb(237, 90, 27)"
+}
