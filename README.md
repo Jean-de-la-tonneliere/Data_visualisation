@@ -74,6 +74,8 @@ The project is organised as follows:
 ## License
 This project uses D3.js, whose license is included in the `libs/d3/` directory.
 
+The dataset can be retrieved at [https://www.kaggle.com/datasets/ankushpanday1/alzheimers-prediction-dataset-global/data](https://www.kaggle.com/datasets/ankushpanday1/alzheimers-prediction-dataset-global/data).
+
 The dataset is set under the MIT license mentioning the following ([https://www.mit.edu/\~amini/LICENSE.md](https://www.mit.edu/~amini/LICENSE.md)):
 
 ```
